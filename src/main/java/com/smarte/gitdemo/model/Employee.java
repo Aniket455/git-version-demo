@@ -5,7 +5,7 @@ public class Employee {
 	private String name;
 	private int age;
 	private String department;
-	private String city;
+	private String address;
 	public Employee() {}
 
 	public Employee(String name, int age, String department, String city) {
