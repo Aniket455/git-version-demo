@@ -51,4 +51,9 @@ public class Employee {
 	public String toString() {
 		return "Employee [name=" + name + ", age=" + age + ", department=" + department + ", city=" + city + "]";
 	}
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
+	}
 }
