@@ -7,10 +7,10 @@ public class Employee {
 	private String department;
 
 	private String email;
-	private String address;
+	private Address address;
 	public Employee() {}
 
-	public Employee(String name, int age, String department, String address) {
+	public Employee(String name, int age, String department, Address address) {
 		this.name = name;
 		this.age = age;
 		this.department = department;
@@ -49,14 +49,9 @@ public class Employee {
 		this.email = email;
 	}
 	
-	public String getAddress() {
+	public Address getAddress() {
 		return address;
 	}
-	
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	
 	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", age=" + age + ", department=" + department + ", email=" + email
