@@ -5,14 +5,14 @@ public class Employee {
 	private String name;
 	private int age;
 	private String department;
-	private String Address;
+	private String city;
 	public Employee() {}
 
-	public Employee(String name, int age, String department, String address) {
+	public Employee(String name, int age, String department, String city) {
 		this.name = name;
 		this.age = age;
 		this.department = department;
-		this.Address = address;
+		this.city = city;
 	}
 
 	public String getName() {
@@ -39,16 +39,16 @@ public class Employee {
 		this.department = department;
 	}
 
-	public String getAddress() {
-		return Address;
+	public String getCity() {
+		return city;
 	}
 	
-	public void setAddress(String address) {
-		Address = address;
+	public void setCity(String city) {
+		this.city = city;
 	}
 	
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", age=" + age + ", department=" + department + ", Address=" + Address + "]";
+		return "Employee [name=" + name + ", age=" + age + ", department=" + department + ", city=" + city + "]";
 	}
 }
