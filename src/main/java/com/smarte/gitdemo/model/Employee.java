@@ -5,14 +5,16 @@ public class Employee {
 	private String name;
 	private int age;
 	private String department;
-	private String city;
+
+	private String email;
+	private String address;
 	public Employee() {}
 
-	public Employee(String name, int age, String department, String city) {
+	public Employee(String name, int age, String department, String address) {
 		this.name = name;
 		this.age = age;
 		this.department = department;
-		this.city = city;
+		this.address = address;
 	}
 
 	public String getName() {
@@ -39,18 +41,28 @@ public class Employee {
 		this.department = department;
 	}
 
-	public String getCity() {
-		return city;
+	public String getEmail() {
+		return email;
 	}
 	
-	public void setCity(String city) {
-		this.city = city;
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+	
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", age=" + age + ", department=" + department + ", city=" + city + "]";
+		return "Employee [name=" + name + ", age=" + age + ", department=" + department + ", email=" + email
+				+ ", address=" + address + "]";
 	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		// TODO Auto-generated method stub
